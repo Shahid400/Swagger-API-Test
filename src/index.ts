@@ -10,7 +10,7 @@ const health = require("@cloudnative/health-connect");
 let healthcheck = new health.HealthChecker();
 import { MongoCluster,MongoDbName,MongoPass,MongoUserName } from "./utills/constant.utills";
 let server : Server | null = null;
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 function initApplication():Application{
                  new DbMongo().connect(MongoCluster,MongoDbName,MongoUserName,MongoPass);
                  const app = express();

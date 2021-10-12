@@ -3,7 +3,7 @@ import { DeleteUserReq, RegisterUserReq } from '../types/request/user.request'
 import { RegisterUserRes } from '../types/response/user.response'
 import { UserController } from '../controller/user.controller'
 import Jwt from 'jsonwebtoken'
-import { AuthAdmin } from '../middleware/auth'
+import { AuthAdmin } from '../middleware/auth.middleware'
 class UserRoutes{
     router: express.Router
     constructor(){

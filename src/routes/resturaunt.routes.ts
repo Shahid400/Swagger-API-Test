@@ -3,7 +3,7 @@ import { DeleteResturauntReq, GetResturauntReq, RegisterResturauntReq } from '..
 import { RegisterResturauntRes } from '../types/response/resturaunt.response'
 import { ResturauntController } from '../controller/resturaunt.controller'
 import Jwt from 'jsonwebtoken'
-import { AuthAdmin } from '../middleware/auth'
+import { AuthAdmin } from '../middleware/auth.middleware'
 class ResturauntRoutes{
     router: express.Router
     constructor(){

@@ -1,4 +1,4 @@
-import { coordinates } from "../document/Iresturaunt.doc";
+import { coordinates } from "../document/resturaunt.document";
 export interface RegisterResturauntRes{
     _id: string,
     ResturauntName: string,

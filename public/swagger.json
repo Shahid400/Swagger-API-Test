@@ -338,12 +338,15 @@
 						}
 					}
 				},
+				"description": "Register Admin",
+				"summary": "Admin Registration Route",
 				"tags": [
-					"Admin"
+					"Admin Management Routes"
 				],
 				"security": [],
 				"parameters": [],
 				"requestBody": {
+					"description": "Admin Details",
 					"required": true,
 					"content": {
 						"application/json": {
@@ -370,12 +373,15 @@
 						}
 					}
 				},
+				"description": "Admin Login",
+				"summary": "Admin must login to get access to Routes",
 				"tags": [
-					"Admin"
+					"Admin Management Routes"
 				],
 				"security": [],
 				"parameters": [],
 				"requestBody": {
+					"description": "Admin Credentials required",
 					"required": true,
 					"content": {
 						"application/json": {
@@ -402,8 +408,10 @@
 						}
 					}
 				},
+				"description": "Admin must be login to Register the Resturaunt",
+				"summary": "Admin can Register the Resturaunt",
 				"tags": [
-					"Resturaunt"
+					"Resturaunt Management Routes"
 				],
 				"security": [
 					{
@@ -412,6 +420,7 @@
 				],
 				"parameters": [],
 				"requestBody": {
+					"description": "Resturaunt details required with longitude and latitude",
 					"required": true,
 					"content": {
 						"application/json": {
@@ -453,8 +462,10 @@
 						}
 					}
 				},
+				"description": "Admin must be login to Delete specific Resturaunt with id",
+				"summary": "Admin can Delete any Resturaunt by entering Resturaunt id",
 				"tags": [
-					"Resturaunt"
+					"Resturaunt Management Routes"
 				],
 				"security": [
 					{
@@ -463,6 +474,7 @@
 				],
 				"parameters": [],
 				"requestBody": {
+					"description": "Resturaunt id is required to delete it",
 					"required": true,
 					"content": {
 						"application/json": {
@@ -489,12 +501,15 @@
 						}
 					}
 				},
+				"description": "User can get the details of resturaunt by entering Resturaunt's id",
+				"summary": "User can get Resturaunt's details by Resturaunt's id",
 				"tags": [
-					"Resturaunt"
+					"Resturaunt Management Routes"
 				],
 				"security": [],
 				"parameters": [],
 				"requestBody": {
+					"description": "Resturaunt's id is required",
 					"required": true,
 					"content": {
 						"application/json": {
@@ -524,12 +539,15 @@
 						}
 					}
 				},
+				"description": "User can find the nearest Resturaunts within range by entering radius, Latitude & Longitude of place of his choice",
+				"summary": "User can find nearest Resturaunts",
 				"tags": [
-					"Resturaunt"
+					"Resturaunt Management Routes"
 				],
 				"security": [],
 				"parameters": [],
 				"requestBody": {
+					"description": "Latitude & Longitude from which you want to calculate distance and radius in meters",
 					"required": true,
 					"content": {
 						"application/json": {
@@ -556,12 +574,15 @@
 						}
 					}
 				},
+				"description": "User will Register himself",
+				"summary": "Registration by User",
 				"tags": [
-					"User"
+					"User Management Routes"
 				],
 				"security": [],
 				"parameters": [],
 				"requestBody": {
+					"description": "User Details required",
 					"required": true,
 					"content": {
 						"application/json": {
@@ -603,8 +624,10 @@
 						}
 					}
 				},
+				"description": "Admin must be login to delete User",
+				"summary": "Admin can delete User",
 				"tags": [
-					"User"
+					"User Management Routes"
 				],
 				"security": [
 					{
@@ -613,6 +636,7 @@
 				],
 				"parameters": [],
 				"requestBody": {
+					"description": "User id is required to delete user",
 					"required": true,
 					"content": {
 						"application/json": {
@@ -642,8 +666,10 @@
 						}
 					}
 				},
+				"description": "Admin must be login to check the list of Registered Users",
+				"summary": "Admin can check Registered Users",
 				"tags": [
-					"User"
+					"User Management Routes"
 				],
 				"security": [
 					{
